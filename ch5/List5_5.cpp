@@ -1,23 +1,26 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-
-
+ 
 int main()
 {
-int i = 0;
-while (true){ // loop-continuation-condition is always true
-	cout << "infinite loop...\n";
-	if (i == 5) // when i = 5,
-      break;    // immediately breaks out the loop
-      //continue; // breaks out the iteration
-    i++;
-}
-
-//  for(;;)
-//  	cout << "infinite loop...\n";
+  cout << "Enter an integer (the input ends " <<
+     "if it is 0): "; 
+  int data;
+  cin >> data;
   
-    
-    
-	system("pause");
-	return 0;
+  // Keep reading data until the input is 0
+  int sum = 0;
+  while (data != 0)
+  { 
+    sum += data;
+  
+    // Read the next data 
+    cout << "Enter an integer (the input ends " << 
+      "if it is 0): "; 
+    cin >> data; 
+  } 
+  
+  cout << "The sum is " << sum << endl;
+  
+  return 0;
 }
