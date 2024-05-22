@@ -41,6 +41,12 @@ class Vector
 //		return (Vector(x + v2.x, y + v2.y));
 //	}
 
+	    Vector operator*(const double& r)
+{
+
+		return (Vector(x*r, y *r));
+}
+
 	Vector(double i = 0, double j = 0)
 	{
 		x = i;
@@ -60,5 +66,7 @@ int main()
 	(Vec1+Vec2).Show();
 	Vector Vec5 = Vec1 + Vec2;
 	Vec5.Show();
+	Vector Vec6 = Vec1 * 3.0;
+	Vec6.Show();
 	return 0;
 }
