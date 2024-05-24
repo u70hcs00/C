@@ -1,5 +1,3 @@
-#ifndef CIRCLE_H
-#define CIRCLE_H
 #include "GeometricObject.h"
  
 class Circle: public GeometricObject
@@ -19,4 +17,4 @@ class Circle: public GeometricObject
  double radius;
 }; // Must place semicolon here
  
-#endif
+

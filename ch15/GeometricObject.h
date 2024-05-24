@@ -1,8 +1,5 @@
-#ifndef GEOMETRICOBJECT_H
-#define GEOMETRICOBJECT_H
 #include <string>
 using namespace std;
-
 class GeometricObject
 {
  public:
@@ -19,4 +16,4 @@ class GeometricObject
    bool filled;
 }; // Must place semicolon here
  
-#endif
+

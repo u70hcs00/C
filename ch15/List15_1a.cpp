@@ -26,8 +26,8 @@ private:
 
 double Rectangle::area()
 {
-   return (x - Shape::getX()) * (y - Shape::getY());
- //   return (x - getX()) * (y - getY());
+    return (x - Shape::getX()) * (y - Shape::getY());
+  //  return (x - getX()) * (y - getY()); //Now x = getX()
 }          
 
 int main()
